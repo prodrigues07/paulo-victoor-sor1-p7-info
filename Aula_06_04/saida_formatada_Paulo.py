@@ -1,0 +1,17 @@
+def table(product, entry, left, stock, price, total):
+    print("|{:<19s}|{:>13d}|{:>13d}|{:>13d}|{:>13.2f}|{:>13.2f}|".format(product, entry, left, stock, price, total))
+    print("+-------------------+-------------+-------------+-------------+-------------+-------------+")
+
+print("+-------------------+-------------+-------------+-------------+-------------+-------------+")
+print("|{:<19s}|{:>13s}|{:>13s}|{:>13s}|{:>13s}|{:>13s}|".format('Lista de Produtos', 'QTD Entradas', 'QTD Saídas', 'Saldo Estoque', 'Preço Unitário', 'Subtotal'))
+print("+-------------------+-------------+-------------+-------------+-------------+-------------+")
+table('Azeite de Oliva', 100, 40, 60, 21.90, 1314)
+table('Castanha do Pará', 100, 5, 95, 6.00, 300)
+table('Flocos de Aveia', 1000, 200, 800, 10.9, 872)
+table('Paçoca de Amedoim', 100, 8, 92, 1.5, 30)
+table('Panetone sem Gluten', 100, 60, 40, 17.3, 692)
+table('Pão Sírio Integral', 100, 70, 30, 5.9, 177)
+table('Polpa de Açaí', 100, 1, 99, 7.1, 639)
+table('Queijo Vegano', 100, 30, 70, 25, 1750)
+print("|{:<19s}|{:>13s}|{:>13s}|{:>13s}|{:>13s}|{:>13.2f}|".format('', '', '', '', 'Total:', 1750))
+print("+-------------------+-------------+-------------+-------------+-------------+-------------+")
